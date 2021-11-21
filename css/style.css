@@ -1,0 +1,141 @@
+* , #main{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.tokyoheader{
+    font-size: 40px;
+    text-align: center;
+    background-color: tomato;
+}
+
+.alaskaheader{
+    font-size: 40px;
+    text-align: center;
+    background-color: skyblue;
+
+}
+
+.europeheader{
+    font-size: 40px;
+    text-align: center;
+    background-color:lightgreen;
+
+}
+
+.imgset{
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 15px;
+    
+}
+
+.tokyoset > img{
+    border: 3px solid tomato;
+}
+
+.alaskaset > img{
+    border: 3px solid skyblue;
+}
+
+.europeset > img{
+    border: 3px solid lightgreen;
+}
+
+
+.navigation{
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    gap: 10px;
+    padding-top: 10px;
+
+}
+
+a {
+    color: inherit;
+}
+
+a:link, a:visited {
+    color: black;
+  }
+  
+a.current0:link, a.current0:visited {
+color: black;
+background-color:lightgray;
+border-radius: 5px;
+}
+  a.current1:link, a.current1:visited {
+    color: black;
+    background-color:tomato;
+    border-radius: 5px;
+}
+
+a.current2:link, a.current2:visited {
+    color: black;
+    background-color:lightgreen;
+    border-radius: 5px;
+}
+
+a.current3:link, a.current3:visited {
+    color: black;
+    background-color:skyblue;
+    border-radius: 5px;
+}
+a.current4:link, a.current4:visited {
+    color: black;
+    background-color:lightgray;
+    border-radius: 5px;
+}
+
+figcaption{
+    text-align: center;
+}
+
+.indexset > img{
+    border-left: 10px;
+    border-right: 10px;
+}
+
+footer{
+    text-align: center;
+}
+
+@media screen and (min-width: 850px){
+
+
+.tokyoset{
+    display: flex;
+    flex-wrap: wrap
+
+}
+
+.europeset{
+    display: flex;
+    flex-wrap: wrap
+}
+
+.alaskaset{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.indexset{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+}
+}
