@@ -8,6 +8,7 @@
         <title>Contact</title>
       </head>
     <body>
+        <a class = "skip" href = "#content">Skip to Main Content</a>
         <nav>
             <ul class="navigation">
                 <li><a href="index.html">Landing</a></li>
@@ -23,12 +24,30 @@
             <p>Click on the links above to explore my top travel destinations over the past several years</p>
         </header>
 
-        <main>
+        <main id="content">
             <p><br>
                 Contact Form:
-            </p>
+            </p><br>
+            <div class="form">
+                <form 
+                    action="https://formspree.io/f/mqknzzon"
+                    method="POST"
+                >
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-
+                    <label>Email</label>
+                    <input type="text" name="_replyto" placeholder="Your last name..">
+                      
+                    <label for="subject">Subject</label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                
+                    <input type="submit" value="Submit">
+                  </form>
+            </div>
 
         </main>
 
